@@ -126,6 +126,15 @@ class _FormKontakState extends State<FormKontak> {
           mobileNo: mobileNo!.text,
           email: email!.text,
           company: company!.text));
+      Navigator.pop(context, 'update');
+    } else {
+      //insert
+      await db.saveKontak(Kontak(
+          name: name!.text,
+          mobileNo: mobileNo!.text,
+          email: email!.text,
+          company: company!.text));
+      Navigator.pop(context, 'save');
     }
   }
 }

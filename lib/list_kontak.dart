@@ -72,7 +72,7 @@ class _ListKontakPageState extends State<ListKontakPage> {
                     children: [
                       IconButton(
                           onPressed: () {
-                            _openFormEdit(Kontak);
+                            _openFormEdit(kontak);
                           },
                           icon: Icon(Icons.edit)),
                       IconButton(
