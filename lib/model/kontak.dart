@@ -1,4 +1,4 @@
-class Kontak{
+class Kontak {
   int? id;
   String? name;
   String? mobileNo;
@@ -22,10 +22,10 @@ class Kontak{
   }
 
   Kontak.fromMap(Map<String, dynamic> map) {
-    this.id = map['id'] = id;
-    this.name = map['name'];
-    this.mobileNo = map['mobileNo'];
-    this.email = map['email'];
-    this.company = map['company'];
+    id = map['id'];
+    name = map['name'];
+    mobileNo = map['mobileNo'];
+    email = map['email'];
+    company = map['company'];
   }
 }
